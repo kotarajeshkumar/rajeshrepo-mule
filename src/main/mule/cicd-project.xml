@@ -22,6 +22,14 @@ output application/json
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="24f2514d-8f23-4d8c-b32c-0946a68ab8b0">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 		<logger level="INFO" doc:name="end Logger" doc:id="4e832874-15c4-4c25-a061-faec11e7f619" message="cicd flow ended with *****************    #[payload]"/>
 	</flow>
 </mule>
