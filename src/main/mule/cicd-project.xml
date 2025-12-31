@@ -18,7 +18,7 @@ output application/json
 ---
 {
 	"status": "success",
-	"message": "cicd flow executed successfully"
+	"message": "your cicd flow executed successfully"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
